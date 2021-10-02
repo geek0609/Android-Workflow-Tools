@@ -14,4 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 
-sudo wget https://master.dl.sourceforge.net/project/projectsakura/ginkgo/ProjectSakura-5.2-GAPPS-Basic-20210930-0644-ginkgo-OFFICIAL.zip
+sudo wget https://github.com/kiam001/releases/releases/download/2155-ProjectSakura-5.2-GAPPS-Basic-20210905-1819-vayu-OFFICIAL/ProjectSakura-5.2-GAPPS-Basic-20210905-1819-vayu-OFFICIAL.zip
+
+export IS_DYNAMIC=true

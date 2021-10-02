@@ -21,3 +21,7 @@ sudo apt install brotli
 sudo apt install p7zip-full -y
 
 sudo mkdir -p ~/dump/system
+
+python -m pip install protobuf
+
+python -m pip install Brotli

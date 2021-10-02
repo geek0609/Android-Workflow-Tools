@@ -16,9 +16,22 @@
 
 # tool to extract system/build.prop from rom.zip
 
-sudo unzip -o "*.zip" 'system*' -d ~/dump
 
+
+if ${IS_DYNAMIC}; then
+
+sudo unzip -o "*.zip" -d ~/dump
 cd ~/dump
+wget https://raw.githubusercontent.com/geek0609/android_tools/main/extract_build_prop/update_metadata_pb2.py
+wget https://raw.githubusercontent.com/geek0609/android_tools/main/extract_build_prop/payload_dumper.py
+python payload_dumper.py payload.bin
+
+else
+
+sudo unzip -o "*.zip" 'system*' -d ~/dump
+cd ~/dump
+fi
+
 
 sudo brotli --decompress system.new.dat.br
 
