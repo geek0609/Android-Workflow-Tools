@@ -14,6 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 
-sudo wget https://github.com/kiam001/releases/releases/download/2155-ProjectSakura-5.2-GAPPS-Basic-20210905-1819-vayu-OFFICIAL/ProjectSakura-5.2-GAPPS-Basic-20210905-1819-vayu-OFFICIAL.zip
+sudo wget https://roms.cirrus-ci.workers.dev/0:/mojito/ProjectRadiant-1.1-GAPPS-mojito-20210915-1159-OFFICIAL.zip
 
 export IS_DYNAMIC=true
