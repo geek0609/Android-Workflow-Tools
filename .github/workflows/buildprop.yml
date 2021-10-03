@@ -17,6 +17,8 @@
 name: extract_prop
 on:
   push:
+    paths:
+      - 'extract_build_prop/*'
 
   workflow_dispatch:
 
