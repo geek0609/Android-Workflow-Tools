@@ -42,3 +42,27 @@ sudo python3 sdat2img.py system.transfer.list system.new.dat system.img
 sudo 7z x system.img -y -osystem
 
 cat system/system/build.prop
+
+
+sudo brotli --decompress vendor.new.dat.br
+
+sudo python3 sdat2img.py vendor.transfer.list vendor.new.dat vendor.img
+
+sudo 7z x vendor.img -y -ovendor
+
+ls vendor
+
+cat vendor/build.prop
+
+
+
+sudo brotli --decompress product.new.dat.br
+
+sudo python3 sdat2img.py product.transfer.list product.new.dat product.img
+
+sudo 7z x product.img -y -oproduct
+
+ls product
+
+cat product/build.prop
+
