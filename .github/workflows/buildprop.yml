@@ -34,6 +34,15 @@ jobs:
 
       - name: Download
         run: sudo bash extract_build_prop/download.sh
+      
+      - name: MD5
+        run: sudo md5sum *.zip
+
+      - name: SHA1
+        run: sudo sha1sum *.zip
+
+      - name: SHA256
+        run: sudo sha256sum *.zip
 
       - name: Run script
         run: sudo bash extract_build_prop/system_buildprop.sh
